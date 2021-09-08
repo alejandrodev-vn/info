@@ -15,9 +15,9 @@ function Navbar() {
     <nav className={`navbar ${isDarkMode ? '' : 'light-mode'}`}>
       <Link to="/" className="navbar__logo magic-hover">
         {isDarkMode ? (
-          <img src="/images/logo.png" alt="logo" />
+          <img src="/info/images/logo.png" alt="logo" />
         ) : (
-          <img src="/images/logo-white.png" alt="logo" />
+          <img src="/info/images/logo-white.png" alt="logo" />
         )}
       </Link>
       <div className="flex flex-item items-center justify-center cursor-text">

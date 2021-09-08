@@ -8,7 +8,7 @@ Home.propTypes = {};
 function Home() {
   return (
     <>
-      <Header imageUrl="/images/banner.png" />
+      <Header imageUrl="/info/images/banner.png" />
       <Info />
       <Projects />
     </>

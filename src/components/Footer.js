@@ -25,7 +25,7 @@ function Footer() {
         </p>
         <img
           className="magic-hover"
-          src="/images/signature-white.png"
+          src="/info/images/signature-white.png"
           alt="signature"
         />
         <p className="magic-hover">

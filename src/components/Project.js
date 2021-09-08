@@ -46,7 +46,7 @@ function Project(props) {
               data-scroll
               data-scroll-speed="2"
               data-scroll-repeat
-              src={`/images/${image}`}
+              src={`/info/images/${image}`}
               alt={title}
             />
           ) : (

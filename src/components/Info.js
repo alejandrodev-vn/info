@@ -29,7 +29,7 @@ function Info() {
           >
             <img
               className="w-full h-full magic-hover"
-              src="/images/avt.jpg"
+              src="/info/images/avt.jpg"
               alt="avatar"
             />
           </figure>
