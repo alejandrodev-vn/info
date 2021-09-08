@@ -16,7 +16,7 @@ function Info() {
         style={{ marginBottom: '5rem' }}
         data-scroll-section
       >
-        <Title title="INFOMATION" />
+        <Title title="INFORMATION" />
         <div
           className="info-wrapper w-full row justify-center items-center"
           style={{ height: '80%' }}
