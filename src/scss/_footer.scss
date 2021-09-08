@@ -1,0 +1,21 @@
+footer {
+    border-top: 1px solid gray;
+    padding-top: 20px;
+    background: #000;
+    height: 500px;
+    h5 {
+        font-size: 1.5rem;
+        text-align: center;
+        @include xs {
+            font-size: 1rem;
+        }
+    }
+    .title {
+        @include md {
+            font-size: 3rem;
+        }
+        @include xs {
+            font-size: 2rem;
+        }
+    }
+}

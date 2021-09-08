@@ -1,0 +1,62 @@
+export const PROJECTS = [
+  {
+    id: 1,
+    title: 'GenZ Film',
+    image: 'project1.png',
+    info: {
+      teamSize: 1,
+      date: '25',
+      month: 'June',
+      type: 'WEB-208 Movie website - Personal Project',
+      result: 'Execution time: ~150 hours - Point: 8.7',
+      detail: [
+        'Frontend: HTML, SCSS, Bootstrap',
+        'Framework: ReactJs (React Hook)',
+        'Backend: NodeJs + ExpressJs',
+        'Database: MongoDB + Mongoose',
+        'Library: react-router-dom, react-icons,...',
+      ],
+    },
+    link: 'https://github.com/thanhhuy264/genzfilm',
+  },
+  {
+    id: 2,
+    title: 'Pets Social Network',
+    image: 'project2.png',
+    info: {
+      teamSize: 6,
+      date: '15',
+      month: 'Aug',
+      type: 'PRO-220 Social Network - Graduation Project',
+      result: 'Processing...',
+      detail: [
+        'Frontend: HTML5, CSS3, SCSS, Tailwindcss',
+        'Framework: ReactJs (React Hook)',
+        'Backend: NodeJs + ExpressJs',
+        'Database: Firebase',
+        'Library: Redux, react-router-dom, react-icons,...',
+      ],
+    },
+    link: 'https://github.com/tranminhwang/pets-social-network-client',
+  },
+  {
+    id: 3,
+    title: 'System Website',
+    image: 'project3.jpg',
+    info: {
+      teamSize: 6,
+      date: '05',
+      month: 'May',
+      type: 'PRO-116 System website manage Certificate - Internship Project',
+      result: 'Complete 85% of requirements',
+      detail: [
+        'Frontend: HTML5, CSS3, SCSS, Bootstrap',
+        'Framework: without Framework (Vanilla Js)',
+        'Backend: NodeJs + ExpressJs',
+        'Database: MongoDB + Mongoose',
+        'Library: jquery,...',
+      ],
+    },
+    link: 'https://github.com/thanhhuy264/webvtc',
+  },
+];

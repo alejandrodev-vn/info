@@ -1,0 +1,200 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  padding-top: 110px;
+  .navbar-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    color: #fff;
+  }
+  &__img {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin-top: 70px;
+    @include lg {
+      margin-top: 40px;
+    }
+    @include md {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      &::before {
+        left: 16% !important;
+      }
+      &::after {
+        left: 16% !important;
+      }
+    }
+    @include xs {
+      display: none;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      border-left: 200px solid #eee;
+      border-right: 200px solid #eee;
+      border-bottom: 200px solid transparent;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      border-left: 200px solid #eee;
+      border-right: 200px solid #eee;
+      border-top: 200px solid transparent;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+    }
+  }
+  &__hero {
+    position: absolute;
+    width: 60%;
+    top: 35%;
+    left: 25%;
+    color: #fff;
+    text-align: center;
+    mix-blend-mode: difference;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    @include lg {
+      top: 25%;
+      left: 45%;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+      width: 50%;
+      height: 390px;
+    }
+    @include md {
+      top: 57%;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+    @include xs {
+      position: relative;
+      height: 350px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      top: 15%;
+      left: 0;
+      text-align: center;
+    }
+    .title {
+      font-size: 4rem;
+      margin: 0;
+      white-space: nowrap;
+      @include lg {
+        white-space: unset;
+      }
+      @include xs {
+        font-size: 3rem;
+        white-space: unset;
+      }
+    }
+    .description {
+      font-size: 3rem;
+      margin: 0;
+      @include lg {
+        font-size: 2rem;
+      }
+      @include xs {
+        font-size: 1rem;
+      }
+    }
+    .scroll-down {
+      padding-left: 5px;
+      position: relative;
+      text-orientation: initial;
+      writing-mode: vertical-lr;
+      border-left: 3px solid #eee;
+      direction: ltr;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row-reverse;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 0%;
+        top: 0;
+        left: -3px;
+        will-change: height;
+        background-color: #000;
+        animation-name: scrollDown;
+        box-shadow: 1px 1px solid white;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        z-index: 1;
+      }
+      @keyframes scrollDown {
+        from {
+          height: 0%;
+        }
+        to {
+          height: 100%;
+        }
+      }
+    }
+  }
+  &.light-mode {
+    .navbar-wrapper {
+      color: #000;
+    }
+    .header {
+      &__img::before {
+        border-left: 200px solid #170d48;
+        border-right: 200px solid #170d48;
+        border-bottom: 200px solid transparent;
+      }
+      &__img::after {
+        border-left: 200px solid #170d48;
+        border-right: 200px solid #170d48;
+        border-top: 200px solid transparent;
+      }
+      &__hero {
+        color: #000;
+        mix-blend-mode: unset;
+        h1 {
+          background-color: #000;
+          color: #eee;
+        }
+        .scroll-down {
+          border-left: 3px solid #000;
+          &::before {
+            background-color: #fff;
+            animation-name: scrollDown;
+            box-shadow: 1px 1px solid #000;
+          }
+        }
+      }
+    }
+  }
+}

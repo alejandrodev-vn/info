@@ -1,0 +1,54 @@
+.btn-info {
+    border-radius: 7px;
+    padding: 5px 10px;
+    background-color: rgb(60, 70, 212);
+    color: white;
+    display: block;
+    border: none;
+    transition: 0.3s ease-in-out;
+    cursor: none;
+    white-space: nowrap;
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:focus-visible {
+        background-color: rgb(57, 68, 223);
+    }
+    &:focus,
+    &:focus-within,
+    &:focus-visible {
+        border-color: #253af2;
+        box-shadow: 0 0 0 0.25rem #0267ff83;
+    }
+}
+.btn-view {
+    border-radius: 7px;
+    padding: 5px 10px;
+    background-color: rgb(60, 70, 212);
+    color: white;
+    border: none;
+    transition: 0.3s ease-in-out;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+    white-space: nowrap;
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:focus-visible {
+        background-color: rgb(57, 68, 223);
+    }
+    &:focus,
+    &:focus-within,
+    &:focus-visible {
+        border-color: #253af2;
+        box-shadow: 0 0 0 0.25rem #0267ff83;
+    }
+    @include xs {
+        width: 120px;
+        height: 35px;
+    }
+}
