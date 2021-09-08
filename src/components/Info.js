@@ -12,7 +12,7 @@ function Info() {
   return (
     <>
       <section
-        className="container h-screen"
+        className="container h-screen h-xs-170vh"
         style={{ marginBottom: '5rem' }}
         data-scroll-section
       >
