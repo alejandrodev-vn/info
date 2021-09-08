@@ -17,9 +17,9 @@ body {
 section {
     height: 600px;
 }
-.h-xs-170vh {
+.h-xs-180vh {
     @include xs {
-        height: 170vh;
+        height: 180vh !important;
     }
 }
 .bg-white {
