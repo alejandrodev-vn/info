@@ -13,7 +13,7 @@ function Navbar() {
   const { isDarkMode, handleChangeDarkMode } = useContext(DarkModeContext);
   return (
     <nav className={`navbar ${isDarkMode ? '' : 'light-mode'}`}>
-      <Link to="/" className="navbar__logo magic-hover">
+      <Link to="/info" className="navbar__logo magic-hover">
         {isDarkMode ? (
           <img src="/info/images/logo.png" alt="logo" />
         ) : (
@@ -30,7 +30,7 @@ function Navbar() {
         </a>
         <a
           className="navbar__icons magic-hover"
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/_matchagreenteafrappuccino/"
           target="_blank"
         >
           <AiFillInstagram />
